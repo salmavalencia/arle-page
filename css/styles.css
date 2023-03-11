@@ -81,6 +81,8 @@ body {
 
 .dictionary-board {
     width: 75%;
+    text-align: center;
+    padding: 30px;
 }
 
 .dictionary-logo {
@@ -109,12 +111,114 @@ ul {
 }
 
 .dictionary-board-search {
-    width: 80%;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
 }
 
 .dictionary-input {
     border: none;
+    font-size: 25px;
+    max-width: 80%;
+    width: 800px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
+
 .dictionary-input-button {
     border: none;
+    background-color: white;
+    color: #ff944c;
+    width: 40px;
+    font-size: 30px;
+    font-size: 25px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.dictionary-definition {
+    background-color: white;
+    border-radius: 15px;
+    font-size: 25px;
+    line-height: 2.5;
+    max-width: 100%;
+    width: 850px;
+    margin: 20px;
+    margin-block: 40px;
+}
+
+.dictionary-word {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.dictionary-word:hover {
+    background-color: #ff944c;
+    color: white;
+}
+
+.dictionary-word:nth-child(1) {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.fa-trash-o {
+    margin-inline: 10px;
+    color: white;
+}
+.fa-edit {
+    color: white;
+}
+
+.dictionary-word:nth-last-child(1) {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.definition-button {
+    background-color: #ff5454;
+    border: none;
+    border-radius: 40px;
+    padding-inline: 30px;
+    color: white;
+    margin: 20px;
+}
+
+.definition-button:hover {
+    background-color: #c04141;
+}
+
+/* Style documents page*/
+
+.documents {
+    margin-top: 50px;
+    display: grid;
+    gap: 9rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.single-document {
+    background-color: white;
+    padding: 20px;
+    font-size: 20px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px #9c9999;
+    flex-direction: column;
+    color: #ff944c;
+}
+
+.single-document-ball {
+    background-color: #ff944c;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: white
 }
